@@ -1,8 +1,13 @@
 import { listData } from "../../../api";
+import { Loading } from "../../Loading";
 
 export const Home = () => {
-  const data = listData;
-  console.log(data);
+  // const data = listData();
+  // console.log(data);
 
-  return <div>홈입니당</div>;
+  return (
+    <div>
+      <Loading />
+    </div>
+  );
 };
